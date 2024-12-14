@@ -5,11 +5,11 @@ import { useEffect, useState } from 'react';
 import { AppLanguages, languageAtom } from '@/state/languageAtom';
 import { fetchAndJson } from '@/util/helpers/fetchAndJson';
 import { getNewsApiUrl } from '@/util/helpers/getNewsApiUrl';
-import ColumnDisplay from './ColumnDisplay';
+import ColumnDisplay, { TColumnDisplayProps } from './ColumnDisplay';
 
 interface LanguageAwareComponentProps {
     initialLanguage: keyof typeof AppLanguages;
-    initialData: any; // Replace 'any' with your data type
+    initialData: TColumnDisplayProps['column']['data']
 }
 
 export default function LanguageAwareComponent({ initialLanguage, initialData }: LanguageAwareComponentProps) {

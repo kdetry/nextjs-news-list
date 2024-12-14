@@ -1,7 +1,7 @@
 "use client";
 
 import addFormAtom from "@/state/addformAtom";
-import { addColumnAtom, savedColumnsAtom } from "@/state/savedColumns";
+import { addColumnAtom } from "@/state/savedColumns";
 import { useIsMounted } from "@/util/hooks/IsMounted";
 import { useAtom, useSetAtom } from "jotai";
 import { useState } from "react";

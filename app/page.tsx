@@ -1,7 +1,6 @@
 import ColumnAddForm from "@/components/ColumnAddForm";
 import ContainerWrapper from "@/components/ContainerWrapper";
 import LanguageAwareComponent from "@/components/LanguageAwareComponent";
-import Sidebar from "@/components/Sidebar";
 import UserColumns from "@/components/UserColumns";
 import { AppLanguages } from "@/state/languageAtom";
 import { fetchAndJson } from "@/util/helpers/fetchAndJson";

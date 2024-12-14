@@ -2,7 +2,6 @@
 
 import { useAtom } from "jotai"
 import { themeAtom } from "@/state/themeAtom"
-import Sidebar from "@/components/Sidebar"
 import ContainerWrapper from "@/components/ContainerWrapper"
 
 export default function SettingsPage() {
