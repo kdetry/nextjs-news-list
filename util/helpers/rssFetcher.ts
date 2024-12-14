@@ -11,6 +11,8 @@ export const rssFetcher = async ({
   topic,
   language,
 }: TRssFetcherParams): Promise<Array<TNewsItem>> => {
+  console.log("language--->", language);
+  console.log("AppLanguages--->", AppLanguages);
   const languageData = AppLanguages[language];
 
   let queryString = `?hl=${languageData.hl}&gl=${languageData.gl}&ceid=${languageData.ceid}`;
