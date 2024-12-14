@@ -2,7 +2,7 @@
 
 A modern news aggregation application built with Next.js, featuring multi-language support and customizable themes.
 
-![Application Preview](./public/preview.png)
+![Application Preview](./public/preview.jpg)
 
 ## Features
 
