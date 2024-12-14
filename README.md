@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js News Application
+
+A modern news aggregation application built with Next.js, featuring multi-language support and customizable themes.
+
+![Application Preview](./public/preview.png)
+
+## Features
+
+- 🌐 Multi-language news support
+- 🎨 Light/Dark theme switching
+- 📱 Responsive design
+- ⚡ Server-side rendering
+- 🔍 Topic-based news filtering
+- ⚙️ Customizable settings
+
+## Tech Stack
+
+- [Next.js 14](https://nextjs.org/) - React framework
+- [TypeScript](https://www.typescriptlang.org/) - Type safety
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
+- [Next.js API Routes](https://nextjs.org/docs/api-routes/introduction) - Backend API
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:
+```bash
+git clone <your-repo-url>
+```
 
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+3. Create a `.env.local` file in the root directory and add your environment variables:
+```env
+# Add any required API keys or configuration
+```
+
+4. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+├── app/
+│   ├── api/           # API routes
+│   ├── settings/      # Settings page
+│   └── layout.tsx     # Root layout
+├── components/        # Reusable components
+├── public/           # Static assets
+└── ...
+```
 
-## Learn More
+## Key Components
 
-To learn more about Next.js, take a look at the following resources:
+- `ThemeProvider` - Manages application theme state
+- `Sidebar` - Navigation and layout component
+- `LanguageButton` - Language selection interface
+- `ContainerWrapper` - Layout wrapper component
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## API Routes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `/api/news` - Main news endpoint
+- `/api/news/[language]/[topic]` - Language and topic-specific news
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- [Next.js](https://nextjs.org/) - The React Framework
+- [Tailwind CSS](https://tailwindcss.com/) - CSS Framework
+- [Vercel](https://vercel.com/) - Deployment Platform
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
