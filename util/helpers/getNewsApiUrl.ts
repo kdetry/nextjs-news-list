@@ -1,5 +1,4 @@
-import { AppLanguages } from "@/state/languageAtom";
-import { NEWS_API_URL } from "../appconstants";
+import { AppLanguages, NEWS_API_URL } from "../appconstants";
 import { Maybe } from "../typehelpers/maybe";
 
 export type TGetNewsApiUrlParams = {

@@ -2,7 +2,7 @@ import ColumnAddForm from "@/components/ColumnAddForm";
 import ContainerWrapper from "@/components/ContainerWrapper";
 import LanguageAwareComponent from "@/components/LanguageAwareComponent";
 import UserColumns from "@/components/UserColumns";
-import { AppLanguages } from "@/state/languageAtom";
+import { AppLanguages } from "@/util/appconstants";
 import { fetchAndJson } from "@/util/helpers/fetchAndJson";
 import { getNewsApiUrl } from "@/util/helpers/getNewsApiUrl";
 import { cookies } from "next/headers";

@@ -1,35 +1,7 @@
-import { atom } from "jotai";
+import { AppLanguages } from "@/util/appconstants";
 import { atomWithStorage, createJSONStorage } from "jotai/utils";
 
-type TLanguageInfo = {
-    name: string;
-    hl: string;
-    gl: string;
-    ceid: string;
-}
 
-type TLanguageOptions = Record<string, TLanguageInfo>
-
-export const AppLanguages: TLanguageOptions = {
-    ENGB: {
-        name: "English (UK)",
-        hl: "en-GB",
-        gl: "GB",
-        ceid: "GB:en"
-    },
-    ENUS: {
-        name: "English (US)",
-        hl: "en-US",
-        gl: "US",
-        ceid: "US:en"
-    },
-    TR: {
-        name: "Turkish",
-        hl: "tr-TR",
-        gl: "TR",
-        ceid: "TR:tr"
-    }
-}
 
 const languageStorage = createJSONStorage<keyof typeof AppLanguages>(() => ({
     getItem: (key: string): keyof typeof AppLanguages => {

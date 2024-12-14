@@ -4,9 +4,10 @@ import { getNewsApiUrl } from "../helpers/getNewsApiUrl";
 import { Maybe } from "../typehelpers/maybe";
 import { TNewsItem } from "../helpers/parseGoogleNewsRss";
 import { TColumnInfo } from "@/components/ColumnAddForm";
-import { AppLanguages, languageAtom } from "@/state/languageAtom";
+import { languageAtom } from "@/state/languageAtom";
 import { useAtomValue } from "jotai";
 import { savedColumnsAtom } from "@/state/savedColumns";
+import { AppLanguages } from "../appconstants";
 
 type TColumnDataFulfilled = TColumnInfo & {
     data: Maybe<Array<TNewsItem>>;

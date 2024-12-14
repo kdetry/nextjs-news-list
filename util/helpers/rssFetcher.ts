@@ -1,5 +1,4 @@
-import { AppLanguages } from "@/state/languageAtom";
-import { GOOGLE_NEWS_RSS_URL } from "../appconstants";
+import { AppLanguages, GOOGLE_NEWS_RSS_URL } from "../appconstants";
 import { Maybe } from "../typehelpers/maybe";
 import { TNewsItem, parseGoogleNewsRss } from "./parseGoogleNewsRss";
 

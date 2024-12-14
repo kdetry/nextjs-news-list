@@ -2,11 +2,11 @@
 
 import { useAtom } from 'jotai';
 import { useEffect, useState } from 'react';
-import { AppLanguages, languageAtom } from '@/state/languageAtom';
+import { languageAtom } from '@/state/languageAtom';
 import { fetchAndJson } from '@/util/helpers/fetchAndJson';
 import { getNewsApiUrl } from '@/util/helpers/getNewsApiUrl';
 import ColumnDisplay, { TColumnDisplayProps } from './ColumnDisplay';
-
+import { AppLanguages } from '@/util/appconstants';
 interface LanguageAwareComponentProps {
     initialLanguage: keyof typeof AppLanguages;
     initialData: TColumnDisplayProps['column']['data']
