@@ -17,7 +17,6 @@ export default function InitialColumn({column}: TInitialColumnProps) {
 
     useEffect(() => {
         if (languageRef.current !== language) {
-            console.log('fetching data');
             fetchAndJson(getNewsApiUrl({ topic: null, language }))
             .then((data) => setData(data))
             .catch((error) => console.error(error));

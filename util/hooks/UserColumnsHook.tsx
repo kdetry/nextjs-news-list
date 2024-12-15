@@ -71,7 +71,6 @@ export const useUserColumns = () => {
                         .filter(result => result.status === "fulfilled")
                         .map((result) => result.value as TColumnData);
 
-                    console.log("fulfilledResults-->", fulfilledResults);
                     setColumns(fulfilledResults);
                 });
     }, [columns, language]);

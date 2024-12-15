@@ -5,9 +5,6 @@ type Params = {
   topic?: string[];
 };
 
-export const dynamic = "force-static";
-export const revalidate = 600;
-
 export async function GET(request: Request, { params }: { params: Promise<Params> }) {
   const { language, topic: topicArray } = await params;
   const topic = topicArray?.[0] || null;

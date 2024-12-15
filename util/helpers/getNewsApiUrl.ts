@@ -7,6 +7,6 @@ export type TGetNewsApiUrlParams = {
 }
 
 export const getNewsApiUrl = ({ topic, language }: TGetNewsApiUrlParams) => {
-    let topicString = topic ? `/${topic}` : '';
+    const topicString = topic ? `/${topic}` : '';
     return `${NEWS_API_URL}/${language}${topicString}`;
 };
