@@ -13,8 +13,8 @@ export default function ColumnDisplay({ column }: TColumnDisplayProps) {
     if (column.status === 'pending') return <UserColumnsPlaceholder />;
 
     return (
-        <div className="flex flex-1 flex-col gap-2 h-[45vh] overflow-y-scroll border-2 border-gray-300 rounded-lg p-4">
-            <h2 className="text-2xl font-bold text-center">{column?.title}</h2>
+        <div className="flex flex-1 flex-col gap-2 h-[45vh] overflow-y-scroll border-2 border-gray-300 rounded-lg p-2 dark:border-gray-700">
+            <h2 className="text-2xl font-bold text-center  border-b border-gray-300 dark:border-gray-700 pb-2">{column?.title}</h2>
             {column?.data && column?.data?.map((item, subIndex) => (
                 <NewsItem item={item} key={`${item.title}${subIndex}`} />
             ))}
