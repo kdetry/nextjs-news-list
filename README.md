@@ -1,4 +1,4 @@
-# Next.js News Application
+# Next.js News Aggregator
 
 A modern news aggregation application built with Next.js, featuring multi-language support and customizable themes.
 
