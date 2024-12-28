@@ -10,9 +10,9 @@ export default function NewsItem({ item }: TNewsItemProps) {
         const date = new Date(pubDate);
         const now = new Date();
         const diffTime = Math.abs(now.getTime() - date.getTime());
-        const diffMinutes = Math.ceil(diffTime / (1000 * 60));
-        const diffHours = Math.ceil(diffTime / (1000 * 60 * 60));
-        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+        const diffMinutes = Math.floor(diffTime / (1000 * 60));
+        const diffHours = Math.floor(diffTime / (1000 * 60 * 60));
+        const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
 
         if (diffMinutes < 60) return `${diffMinutes} minutes ago`;
         if (diffHours < 24) return `${diffHours} hours ago`;
